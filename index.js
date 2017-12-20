@@ -6,6 +6,7 @@ const sharp = require('sharp');
 
 const app = express();
 app.use(express.static('public'));
+app.use(express.static('uploads/images'));
 
 
 const pdfStorage = multer.diskStorage({
